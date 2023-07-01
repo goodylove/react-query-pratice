@@ -15,20 +15,76 @@
     {
       "id": 4,
       "name": "plays"
+    },
+    {
+      "postName": "musty",
+      "id": 5
+    },
+    {
+      "postName": "gg",
+      "id": 6
+    },
+    {
+      "name": "love",
+      "id": 7
+    },
+    {
+      "name": "mine",
+      "id": 8
+    },
+    {
+      "name": "you",
+      "id": 9
     }
   ],
-  "users": [{ "id": "goodyc474@gmail", "channelId": "goody" }],
+  "users": [
+    {
+      "id": "goodyc474@gmail",
+      "channelId": "goody"
+    }
+  ],
   "channels": [
-    { "id": "goody", "courses": ["typescript", "react-query", "react"] }
+    {
+      "id": "goody",
+      "courses": [
+        "typescript",
+        "react-query",
+        "react"
+      ]
+    }
   ],
   "colors": [
-    { "id": 1, "label": "red" },
-    { "id": 2, "label": "blue" },
-    { "id": 3, "label": "yellow" },
-    { "id": 4, "label": "pink" },
-    { "id": 5, "label": "green" },
-    { "id": 6, "label": "orange" },
-    { "id": 7, "label": "black" },
-    { "id": 8, "label": "gray" }
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "yellow"
+    },
+    {
+      "id": 4,
+      "label": "pink"
+    },
+    {
+      "id": 5,
+      "label": "green"
+    },
+    {
+      "id": 6,
+      "label": "orange"
+    },
+    {
+      "id": 7,
+      "label": "black"
+    },
+    {
+      "id": 8,
+      "label": "gray"
+    }
   ]
 }

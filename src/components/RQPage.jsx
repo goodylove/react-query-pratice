@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { useQuery } from "react-query";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useAddData } from "../Hooks/useFetchData";
 
 const fetchHero = () => {
   return axios.get("http://localhost:3000/heroes");
 };
 const RQPage = () => {
   const [refetchInterval, setRefetchInterval] = useState(3000);
+  const [name, setPostName] = useState("");
   // const onSuccess = (data) => {
   //   if (data.data.length === 4) {
   //     setRefetchInterval(false);
@@ -35,10 +37,27 @@ const RQPage = () => {
       // },
     }
   );
+  const { mutate } = useAddData();
+  // if you have multiple  data you can do this
+  // const { mutate:addHero } = useAddData()
   if (isLoading) return <h2>Loading....</h2>;
   if (isError) return <h2>{error.message}</h2>;
+  const handleAddHero = () => {
+    console.log("add  hero", name);
+    const hero = { name };
+    mutate(hero);
+    // addHero(hero);
+  };
   return (
     <>
+      <div>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setPostName(e.target.value)}
+        />
+        <button onClick={handleAddHero}>add hero</button>
+      </div>
       <h2>RQPage</h2>
       {data?.data.map((item, index) => (
         <div key={index}>
