@@ -13,6 +13,21 @@ export default function Nav() {
       <li>
         <Link to="/rq-page"> react-query</Link>
       </li>
+      <li>
+        <Link to="/rq2-page"> react-query2</Link>
+      </li>
+      <li>
+        <Link to="/dynamic"> dynamic-queries</Link>
+      </li>
+      <li>
+        <Link to="/depend"> dependent-queries</Link>
+      </li>
+      <li>
+        <Link to="/pagnation"> pagination</Link>
+      </li>
+      <li>
+        <Link to="/infinite"> infinite</Link>
+      </li>
     </ul>
   );
 }

@@ -2,19 +2,33 @@
   "heroes": [
     {
       "id": 1,
-      "name": "movies"
+      "name": "goodness"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "football"
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "dance"
     },
     {
-      "id": 1,
+      "id": 4,
       "name": "plays"
     }
+  ],
+  "users": [{ "id": "goodyc474@gmail", "channelId": "goody" }],
+  "channels": [
+    { "id": "goody", "courses": ["typescript", "react-query", "react"] }
+  ],
+  "colors": [
+    { "id": 1, "label": "red" },
+    { "id": 2, "label": "blue" },
+    { "id": 3, "label": "yellow" },
+    { "id": 4, "label": "pink" },
+    { "id": 5, "label": "green" },
+    { "id": 6, "label": "orange" },
+    { "id": 7, "label": "black" },
+    { "id": 8, "label": "gray" }
   ]
 }
